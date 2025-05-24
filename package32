@@ -8,7 +8,7 @@ echo -e "done?"
 sleep 2s
 
 make CC=clang ARCH=arm64 O=out nethunter_defconfig
-make CC=clang LLVM=1 ARCH=arm64 O=out -j16 \
+make CC=clang LLVM=1 ARCH=arm32 O=out -j16 \
         HEADER_ARCH=arm32 \
         SUBARCH=arm32 \
         CXX=c++ \
